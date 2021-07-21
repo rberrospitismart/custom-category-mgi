@@ -78,6 +78,7 @@ export default {
               backgroundColor: `#${ color }`,
               abreviation: abreviation,
             })
+            return;
           } 
         
           html.classList.remove("category-page-custom-banner")

@@ -1,0 +1,94 @@
+.custom-categories-wrapper {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-gap: 25px;
+
+  .custom-category {
+    padding: 15px;
+    border-radius: 2px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    align-content: space-between;
+
+    .custom-featured-topics ul {
+      list-style: none;
+      margin: 0;
+      display: grid;
+      grid-row-gap: 10px;
+
+      li {
+        display: grid;
+        grid-template-columns: 1fr 15fr;
+        background-color: rgba($secondary,.9);
+        border-radius: 5px;
+        padding: 8px 12px;
+        border: 1px solid transparent;
+        align-items: center;
+
+        &:hover {
+          border: 1px solid rgba($primary,.5);
+          box-shadow: 1px 1px 0px rgba($primary,.25)
+        }
+
+        a { color: $primary; }
+
+        svg.d-icon {
+          color: $primary;
+          margin-right: 10px;
+        }
+      }
+    }
+
+    .custom-category-more-link {
+      color: $primary-medium;
+      font-size: $font-down-2;
+      margin-top: 15px;
+      padding: 1px 7px 0px 7px;
+      background-color: rgba($secondary,.75);
+      border-radius: 2px;
+      border: 1px solid transparent;
+      display: inline-block;
+      // start at the first line of grid, and width is set to content inside
+      justify-self: start;
+
+      &:hover { box-shadow: 1px 1px 1px rgba($primary,.25) }
+    }
+
+    a #custom-category-title {
+      color: $primary;
+      text-align: left;
+      font-size: $font-up-3;
+      margin: 5px 0 20px 0;
+      font-weight: bold;
+    }
+  }
+}
+
+/* Custom Category Banner */
+.custom-category-banner-wrapper {
+  padding-top: 100px;
+}
+.custom-category-banner {
+  width: 50%;
+  margin: 0 auto 0 auto;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  h1 {
+    font-size: $font-up-5;
+  }
+}
+
+.category-page-custom-banner {
+  #main-outlet {
+    padding-top: 50px;
+  }
+}

@@ -11,8 +11,7 @@ export default Component.extend({
     this._super(...arguments);
 
     if (this.topicCount) {
-      this.set("hasTopics", true)
-      this._applyBgColor(this.hexToRgb(this.c.color));
+      this.set("hasTopics", true);
     } else {
       this.element.style.display = "none";
     }

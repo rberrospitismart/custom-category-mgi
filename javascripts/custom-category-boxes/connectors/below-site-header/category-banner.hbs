@@ -9,17 +9,19 @@
 <h1 class="custom-category-banner-title">{{title}}</h1>
 </div>
 </div> --}}
-
 <div 
-  class="row align-items-center banner py-4" 
+  class="banner py-4" 
   style="background-color: {{backgroundColor}};"
   >
-    <div class="col">
-        <h1 class="fw-bold">{{title}}</h1>
+  <div class="container row align-items-center">
+    <div class="col-12 col-lg-3 col-md-4">
+        <h1 class="fw-bold title">{{title}}</h1>
         <p>{{description}}</p>
     </div>
-    <div class="col do-flex justify-content-center">
+    <div class="col do-flex justify-content-center d-sm-none">
         <h1 class="hola">{{abreviation}}</h1>
     </div>
+  </div>
 </div>
+
 {{/if}}

@@ -13,19 +13,17 @@ export default {
 
         if (splitURL[1] === "c") {
           let categoryTitle = splitURL[2];
-
-          let rnd = Math.floor(Math.random()*4);
-          let bg = `${settings.category_background}-${rnd}`;
-
           let c;
 
+          console.log(settings);
+          console.log(this.site.categories);
           this.site.categories.forEach((cat) => {
+            console.log(cat);
             let name = cat.name.toLowerCase().replace(" ","-");
             if (name === categoryTitle.toLowerCase()) {
               c = cat;
             }
           })
-
 
           html.classList.add("category-page-custom-banner")
 
@@ -33,7 +31,7 @@ export default {
             show_banner,
             title: c.name.replace(/^\w/, c => c.toUpperCase()),
             backgroundColor: `#${c.color}65`,
-            backgroundImage: `url(${settings.theme_uploads[bg]})`,
+            // backgroundImage: `url(${settings.theme_uploads[bg]})`,
             border: `1px solid #${c.color}`,
             boxShadow: `8px 8px 0 #${c.color}32`,
           })

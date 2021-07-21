@@ -33,13 +33,4 @@ export default Component.extend({
     } : null;
   },
 
-  @afterRender
-  _applyBgColor(color) {
-    let rnd = Math.floor(Math.random()*4);
-    let bg = `${settings.category_background}-${rnd}`;
-    this.element.style.backgroundColor = `rgba(${color.r},${color.g},${color.b},.5)`;
-    this.element.style.backgroundImage = `url(${settings.theme_uploads[bg]})`;
-    this.element.style.border = `1px solid #${this.c.color}`
-    this.element.style.boxShadow = `8px 8px 0 rgba(${color.r},${color.g},${color.b},.25)`
-  }
 })

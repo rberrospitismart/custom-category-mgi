@@ -13,7 +13,7 @@
     display: grid;
     align-content: space-between;
 
-    a #custom-category-title {
+    #custom-category-title {
       color: #000000;
       font-size: 18px;
       font-weight: 600;
@@ -30,6 +30,10 @@
   .card {
     border: none !important;
     border-radius: 10px !important;
+  }
+
+  a {
+    text-decoration: none;
   }
 }
 

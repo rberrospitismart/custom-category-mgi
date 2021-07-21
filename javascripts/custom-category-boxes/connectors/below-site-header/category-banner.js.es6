@@ -28,31 +28,25 @@ export default {
           })
 
           const name = `${ c.name }`;
-          let description = "", abreviation = "", backgroundColor = "";
+          let description = "", abreviation = "";
           if(name == 'Anuncios & Eventos'){
             description ="Enterate de nuestros webinars y próximos lanzamientos.";
             abreviation = "A&E";
-            backgroundColor = "FFC1B3";
           } else if(name == 'Reglas del Foro'){
             description = "¿Eres nuevo en la comunidad? Conoce nuestros principios de comportamiento.";
             abreviation = "Reglas";
-            backgroundColor = "D0D0D0";
           } else if(name == 'Foros de Discusión'){
             description = "Conoce y comparte comentarios con nuestra comunidad de inversionistas.";
             abreviation = "Foros";
-            backgroundColor = "AFAFE1";
           } else if(name == 'Articulos y Noticias'){
             description = "Publicaciones de interés para ti.";
             abreviation = "Noticias";
-            backgroundColor = "E1D7F0";
           } else if(name == 'Preguntas & respuestas'){
             description = "Resuelve tus dudas y obtén ayuda de otros usuarios de la comunidad.";
             abreviation = "P&R";
-            backgroundColor = "D2EBEB";
           } else if(name == 'Glosario de términos'){
             description = "Términos de inversión utilizados en Magi y su significado.";
             abreviation = "Glosario";
-            backgroundColor = "90DEDE";
           }
           
           html.classList.add("category-page-custom-banner")
@@ -61,11 +55,31 @@ export default {
             show_banner,
             title: c.name.replace(/^\w/, c => c.toUpperCase()),
             description: description,
-            backgroundColor: `#${ backgroundColor }`,
+            backgroundColor: `#${ c.color }`,
             abreviation: abreviation,
           })
 
         } else {
+
+          // bienvenido 
+          if(splitURL.length == 2){
+
+            const name = `Te damos la <br>bienvenida a la <br>comunidad de Magi`,
+            description = "¡Haz preguntas, resuelve tus dudas, comparte comentarios y conéctate con la comunidad de Magi!", 
+            abreviation = "Hola!", 
+            color = "FFC1B3";
+
+            html.classList.add("category-page-custom-banner")
+
+            component.setProperties({
+              show_banner,
+              title: name,
+              description: description,
+              backgroundColor: `#${ color }`,
+              abreviation: abreviation,
+            })
+          } 
+        
           html.classList.remove("category-page-custom-banner")
           component.setProperties({
             show_banner: false
@@ -74,5 +88,6 @@ export default {
       })
 
     })
+      
   }
 }

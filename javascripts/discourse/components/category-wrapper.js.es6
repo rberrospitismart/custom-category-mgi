@@ -10,7 +10,7 @@ export default Component.extend({
   
   didInsertElement() {
     this._super(...arguments);
-
+    
     const name = `${ this.name }`;
     if(name == 'Anuncios & Eventos'){
       this.set("description", "Enterate de nuestros webinars y próximos lanzamientos.")
@@ -25,7 +25,6 @@ export default Component.extend({
     } else if(name == 'Glosario de términos'){
       this.set("description", "Términos de inversión utilizados en Magi y su significado.")
     }
-    
   },
 
 })

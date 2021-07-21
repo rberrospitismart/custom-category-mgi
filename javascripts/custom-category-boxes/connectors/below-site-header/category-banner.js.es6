@@ -11,15 +11,14 @@ export default {
         let splitURL = url.split("/")
         let html = document.getElementsByTagName("html")[0];
 
-        console.log(url);
-        console.log(settings);
-        console.log(this.site.categories);
+        // console.log(url);
+        // console.log(settings);
+        // console.log(this.site.categories);
 
         if (splitURL[1] === "c") {
           let categoryTitle = splitURL[2];
           let c;
 
-          console.log(categoryTitle);
           this.site.categories.forEach((cat) => {
             let slug = cat.slug.toLowerCase();
             if (slug === categoryTitle.toLowerCase()) {
@@ -27,14 +26,42 @@ export default {
             }
           })
 
+          const name = `${ c.name }`;
+          const description = "", abreviation = "", backgroundColor = "";
+          if(name == 'Anuncios & Eventos'){
+            description ="Enterate de nuestros webinars y próximos lanzamientos.";
+            abreviation = "A&E";
+            backgroundColor = "FFC1B3";
+          } else if(name == 'Reglas del Foro'){
+            description = "¿Eres nuevo en la comunidad? Conoce nuestros principios de comportamiento.";
+            abreviation = "Reglas";
+            backgroundColor = "D0D0D0";
+          } else if(name == 'Foros de Discusión'){
+            description = "Conoce y comparte comentarios con nuestra comunidad de inversionistas.";
+            abreviation = "Foros";
+            backgroundColor = "AFAFE1";
+          } else if(name == 'Articulos y Noticias'){
+            description = "Publicaciones de interés para ti.";
+            abreviation = "Noticias";
+            backgroundColor = "E1D7F0";
+          } else if(name == 'Preguntas & respuestas'){
+            description = "Resuelve tus dudas y obtén ayuda de otros usuarios de la comunidad.";
+            abreviation = "P&R";
+            backgroundColor = "D2EBEB";
+          } else if(name == 'Glosario de términos'){
+            description = "Términos de inversión utilizados en Magi y su significado.";
+            abreviation = "Glosario";
+            backgroundColor = "90DEDE";
+          }
+          
           html.classList.add("category-page-custom-banner")
 
           component.setProperties({
             show_banner,
             title: c.name.replace(/^\w/, c => c.toUpperCase()),
-            backgroundColor: `#${c.color}65`,
-            border: `1px solid #${c.color}`,
-            boxShadow: `8px 8px 0 #${c.color}32`,
+            description: description,
+            backgroundColor: `#${ backgroundColor }`,
+            abreviation: abreviation,
           })
 
         } else {

@@ -1,5 +1,5 @@
 {{#if show_banner}}
-<div class="custom-category-banner-wrapper">
+{{!-- <div class="custom-category-banner-wrapper">
   <div class="custom-category-banner"
   style=
     "background-color: {{backgroundColor}};
@@ -8,5 +8,18 @@
   ">
 <h1 class="custom-category-banner-title">{{title}}</h1>
 </div>
+</div> --}}
+
+<div 
+  class="row align-items-center banner py-4" 
+  style="background-color: {{backgroundColor}};"
+  >
+    <div class="col">
+        <h1 class="fw-bold">{{title}}</h1>
+        <p>{{description}}</p>
+    </div>
+    <div class="col do-flex justify-content-center">
+        <h1 class="hola">{{abreviation}}</h1>
+    </div>
 </div>
 {{/if}}

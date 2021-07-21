@@ -2,7 +2,7 @@
   <a href={{c.url}}>
     <div class="card shadow">
       <div class="row g-0">
-        <div class="col-md-4">
+        <div class="col-3 col-md-4">
           {{#unless c.isMuted}}
             {{#if c.uploaded_logo.url}}
               {{cdn-img src=c.uploaded_logo.url
@@ -12,7 +12,7 @@
             {{/if}}
           {{/unless}}
         </div>
-        <div class="col-md-8">
+        <div class="col-9 col-md-8">
           <div class="card-body">
             <h5 id="custom-category-title" class="card-title" >
               {{!-- <h2 id="custom-category-title"> --}}

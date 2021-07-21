@@ -21,10 +21,8 @@ export default {
 
           console.log(categoryTitle);
           this.site.categories.forEach((cat) => {
-            let name = cat.name.toLowerCase().replace(" ","-");
-            console.log(name);
-            console.log(cat.slug);
-            if (name === cat.slug) {
+            let slug = cat.slug.toLowerCase();
+            if (slug === categoryTitle.toLowerCase()) {
               c = cat;
             }
           })
@@ -35,7 +33,6 @@ export default {
             show_banner,
             title: c.name.replace(/^\w/, c => c.toUpperCase()),
             backgroundColor: `#${c.color}65`,
-            backgroundImage: `url(${settings.theme_uploads[bg]})`,
             border: `1px solid #${c.color}`,
             boxShadow: `8px 8px 0 #${c.color}32`,
           })

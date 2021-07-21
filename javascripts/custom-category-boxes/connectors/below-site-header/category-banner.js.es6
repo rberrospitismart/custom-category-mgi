@@ -11,7 +11,7 @@ export default {
         let splitURL = url.split("/")
         let html = document.getElementsByTagName("html")[0];
 
-        // console.log(url);
+        console.log(url);
         // console.log(settings);
         // console.log(this.site.categories);
 

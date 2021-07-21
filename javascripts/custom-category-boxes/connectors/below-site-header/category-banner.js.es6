@@ -27,7 +27,7 @@ export default {
           })
 
           const name = `${ c.name }`;
-          const description = "", abreviation = "", backgroundColor = "";
+          let description = "", abreviation = "", backgroundColor = "";
           if(name == 'Anuncios & Eventos'){
             description ="Enterate de nuestros webinars y próximos lanzamientos.";
             abreviation = "A&E";

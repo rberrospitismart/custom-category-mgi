@@ -64,7 +64,7 @@ export default {
           // bienvenido 
           if(splitURL.length == 2){
 
-            const name = `Te damos la <br>bienvenida a la <br>comunidad de Magi`,
+            const name = `Te damos la bienvenida a la comunidad de Magi`,
             description = "¡Haz preguntas, resuelve tus dudas, comparte comentarios y conéctate con la comunidad de Magi!", 
             abreviation = "Hola!", 
             color = "FFC1B3";

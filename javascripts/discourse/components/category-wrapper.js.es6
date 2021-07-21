@@ -11,7 +11,6 @@ export default Component.extend({
   didInsertElement() {
     this._super(...arguments);
 
-    console.log(this.name);
     const name = `${ this.name }`;
     if(name == 'Anuncios & Eventos'){
       this.set("description", "Enterate de nuestros webinars y próximos lanzamientos.")

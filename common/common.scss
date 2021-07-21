@@ -37,6 +37,58 @@
   }
 }
 
+@media only screen and (min-width: 500px) {
+  .custom-categories-wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: 25px;
+  
+    .custom-category {
+      // padding: 15px;
+      border-radius: 2px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      display: grid;
+      align-content: space-between;
+  
+      #custom-category-title {
+        color: #000000;
+        font-size: 18px;
+        font-weight: 600;
+        margin: 5px 0 10px 0;
+      }
+  
+      .description {
+        color: #4F4F4F;
+        font-size: 16px;
+        margin-bottom: 0;
+      }
+    }
+      
+    // Card
+    .card {
+      border: none !important;
+      border-radius: 10px !important;
+    }
+  
+    a {
+      text-decoration: none;
+    }
+
+    // Img
+    .logo {
+      height: 100%;
+    } 
+
+    img {
+      height: 100%;
+      width: -webkit-fill-available;
+    }
+  }
+}
+
 /* Custom Category Banner */
 .custom-category-banner-wrapper {
   padding-top: 100px;

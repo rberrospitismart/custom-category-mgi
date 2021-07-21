@@ -6,30 +6,27 @@ import { afterRender } from "discourse-common/utils/decorators";
 export default Component.extend({
   classNames: ["custom-category"],
   topicCount: readOnly("c.topic_count"),
+  name: readOnly("c.name"),
   
   didInsertElement() {
     this._super(...arguments);
 
-    if (this.topicCount) {
-      this.set("hasTopics", true);
-    } else {
-      this.element.style.display = "none";
+    console.log(this.name);
+    const name = `${ this.name }`;
+    if(name == 'Anuncios & Eventos'){
+      this.set("description", "Enterate de nuestros webinars y próximos lanzamientos.")
+    } else if(name == 'Reglas del Foro'){
+      this.set("description", "¿Eres nuevo en la comunidad? Conoce nuestros principios de comportamiento.")
+    } else if(name == 'Foros de Discusión'){
+      this.set("description", "Conoce y comparte comentarios con nuestra comunidad de inversionistas.")
+    } else if(name == 'Articulos y Noticias'){
+      this.set("description", "Publicaciones de interés para ti.")
+    } else if(name == 'Preguntas & respuestas'){
+      this.set("description", "Resuelve tus dudas y obtén ayuda de otros usuarios de la comunidad.")
+    } else if(name == 'Glosario de términos'){
+      this.set("description", "Términos de inversión utilizados en Magi y su significado.")
     }
-  },
-
-  hexToRgb(hex) {
-    // Expand shorthand form (e.g. "03F") to full form (e.g. "0033FF")
-    var shorthandRegex = /^#?([a-f\d])([a-f\d])([a-f\d])$/i;
-    hex = hex.replace(shorthandRegex, function(m, r, g, b) {
-      return r + r + g + g + b + b;
-    });
-  
-    var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
-    return result ? {
-      r: parseInt(result[1], 16),
-      g: parseInt(result[2], 16),
-      b: parseInt(result[3], 16)
-    } : null;
+    
   },
 
 })

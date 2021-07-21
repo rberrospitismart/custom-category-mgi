@@ -1,6 +1,6 @@
 <section>
   <a href={{c.url}}>
-    <div class="card mb-3 shadow">
+    <div class="card shadow">
       <div class="row g-0">
         <div class="col-md-4">
           {{#unless c.isMuted}}
@@ -14,7 +14,7 @@
         </div>
         <div class="col-md-8">
           <div class="card-body">
-            <h5 class="card-title">
+            <h5 class="card-title custom-category-title">
               {{!-- <h2 id="custom-category-title"> --}}
                 {{!-- {{category-title-before category=c}} --}}
                 {{!-- {{#if c.read_restricted}}
@@ -24,6 +24,7 @@
                 {{!-- ({{c.topic_count}}) --}}
               {{!-- </h2> --}}
             </h5>
+            <p class="description">{{ description }}</p>
           </div>
         </div>
       </div>

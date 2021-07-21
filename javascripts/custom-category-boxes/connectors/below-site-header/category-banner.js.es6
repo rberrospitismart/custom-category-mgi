@@ -19,10 +19,12 @@ export default {
           let categoryTitle = splitURL[2];
           let c;
 
+          console.log(categoryTitle);
           this.site.categories.forEach((cat) => {
-            console.log(cat);
             let name = cat.name.toLowerCase().replace(" ","-");
-            if (name === categoryTitle.toLowerCase()) {
+            console.log(name);
+            console.log(cat.slug);
+            if (name === cat.slug) {
               c = cat;
             }
           })

@@ -11,12 +11,14 @@ export default {
         let splitURL = url.split("/")
         let html = document.getElementsByTagName("html")[0];
 
+        console.log(url);
+        console.log(settings);
+        console.log(this.site.categories);
+
         if (splitURL[1] === "c") {
           let categoryTitle = splitURL[2];
           let c;
 
-          console.log(settings);
-          console.log(this.site.categories);
           this.site.categories.forEach((cat) => {
             console.log(cat);
             let name = cat.name.toLowerCase().replace(" ","-");
@@ -31,7 +33,7 @@ export default {
             show_banner,
             title: c.name.replace(/^\w/, c => c.toUpperCase()),
             backgroundColor: `#${c.color}65`,
-            // backgroundImage: `url(${settings.theme_uploads[bg]})`,
+            backgroundImage: `url(${settings.theme_uploads[bg]})`,
             border: `1px solid #${c.color}`,
             boxShadow: `8px 8px 0 #${c.color}32`,
           })

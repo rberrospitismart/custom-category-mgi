@@ -12,8 +12,9 @@ export default {
         let html = document.getElementsByTagName("html")[0];
 
         console.log(url);
-        // console.log(settings);
-        // console.log(this.site.categories);
+        console.log(splitURL);
+        console.log(settings);
+        console.log(this.site.categories);
 
         if (splitURL[1] === "c") {
           let categoryTitle = splitURL[2];

@@ -1,6 +1,4 @@
 import { withPluginApi } from 'discourse/lib/plugin-api';
-import Component from "@ember/component";
-import { afterRender } from "discourse-common/utils/decorators";
 
 export default {
   setupComponent(args, component) {

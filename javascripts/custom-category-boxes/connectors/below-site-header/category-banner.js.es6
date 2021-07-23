@@ -8,6 +8,7 @@ export default {
         let show_banner = settings.show_banner;
         let splitURL = url.split("/")
         let html = document.getElementsByTagName("html")[0];
+        let anuncio = document.getElementById("anuncio");
 
         console.log(url);
         console.log(splitURL);
@@ -67,7 +68,8 @@ export default {
             abreviation = "Hola!", 
             color = "FFC1B3";
 
-            html.classList.add("category-page-custom-banner")
+            html.classList.add("category-page-custom-banner");
+            anuncio.classList.remove("d-none");
 
             component.setProperties({
               show_banner,
@@ -79,7 +81,8 @@ export default {
             return;
           } 
         
-          html.classList.remove("category-page-custom-banner")
+          html.classList.remove("category-page-custom-banner");
+          anuncio.classList.add("d-none");
           component.setProperties({
             show_banner: false
           })

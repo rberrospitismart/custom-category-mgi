@@ -60,7 +60,7 @@ export default {
         } else {
 
           // bienvenido 
-          if(splitURL.length == 2){
+          if(splitURL[1] === '' || splitURL[1].includes('preview_theme_id')){
 
             const name = `Te damos la bienvenida a la comunidad de Magi`,
             description = "¡Haz preguntas, resuelve tus dudas, comparte comentarios y conéctate con la comunidad de Magi!", 

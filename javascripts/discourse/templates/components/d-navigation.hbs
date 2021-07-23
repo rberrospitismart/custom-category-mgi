@@ -1,6 +1,5 @@
-{{bread-crumbs categories=categories category=category noSubcategories=noSubcategories tag=tag additionalTags=additionalTags}}
+{{!-- {{bread-crumbs categories=categories category=category noSubcategories=noSubcategories tag=tag additionalTags=additionalTags}} --}}
 
-<br/>
 {{#unless additionalTags}}
   {{!-- nav bar doesn't work with tag intersections --}}
   {{navigation-bar navItems=navItems filterMode=filterMode category=category}}
@@ -8,14 +7,14 @@
 
 <div class="navigation-controls">
 
-  {{!-- {{#if showCategoryAdmin}}
+  {{#if showCategoryAdmin}}
     {{categories-admin-dropdown
       onChange=(action "selectCategoryAdminDropdownAction")
       options=(hash
         triggerOnChangeOnTab=false
       )
     }}
-  {{/if}} --}}
+  {{/if}}
 
   {{#if category}}
     {{#unless tag}}

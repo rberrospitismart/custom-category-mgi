@@ -116,7 +116,9 @@
   width: 100%;
   // margin-bottom: 10px;
   .nav-pills>li a.active {
-    border-bottom: 1px solid #000000;
+    background: #FAF5F2 !important;
+    color: #000000 !important;
+    border-bottom: 1px solid #000000 !important;
   }
 }
 

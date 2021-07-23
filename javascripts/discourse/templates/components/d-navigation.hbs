@@ -8,14 +8,14 @@
 
 <div class="navigation-controls">
 
-  {{#if showCategoryAdmin}}
+  {{!-- {{#if showCategoryAdmin}}
     {{categories-admin-dropdown
       onChange=(action "selectCategoryAdminDropdownAction")
       options=(hash
         triggerOnChangeOnTab=false
       )
     }}
-  {{/if}}
+  {{/if}} --}}
 
   {{#if category}}
     {{#unless tag}}

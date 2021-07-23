@@ -8,7 +8,7 @@ export default {
         let show_banner = settings.show_banner;
         let splitURL = url.split("/")
         let html = document.getElementsByTagName("html")[0];
-        let anuncio = document.getElementById("anuncio");
+        let anuncio = document.getElementById("anuncio-banner");
 
         console.log(url);
         console.log(splitURL);

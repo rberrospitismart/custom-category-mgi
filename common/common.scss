@@ -115,11 +115,6 @@
 .category-breadcrumb {
   width: 100%;
   // margin-bottom: 10px;
-  .nav-pills>li a.active {
-    background: #FAF5F2 !important;
-    color: #000000 !important;
-    border-bottom: 1px solid #000000 !important;
-  }
 }
 
 .select-kit-header {
@@ -130,5 +125,13 @@
 
   .select-kit-selected-name {
     padding: 8px;
+  }
+}
+
+#navigation-bar {
+  .nav-pills>li a.active {
+    background: #FAF5F2 !important;
+    color: #000000 !important;
+    border-bottom: 1px solid #000000 !important;
   }
 }

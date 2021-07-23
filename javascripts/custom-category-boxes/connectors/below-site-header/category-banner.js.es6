@@ -61,6 +61,7 @@ export default {
         } else {
 
           // bienvenido 
+          console.log(splitURL[1].includes('preview_theme_id'))
           if(splitURL[1] === '' || splitURL[1].includes('preview_theme_id')){
 
             const name = `Te damos la bienvenida a la comunidad de Magi`,

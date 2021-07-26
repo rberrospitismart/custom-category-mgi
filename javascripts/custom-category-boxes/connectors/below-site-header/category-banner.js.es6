@@ -83,7 +83,7 @@ export default {
           } 
         
           html.classList.remove("category-page-custom-banner");
-          anuncio.classList.add("d-none");
+          // anuncio.classList.add("d-none");
           component.setProperties({
             show_banner: false
           })

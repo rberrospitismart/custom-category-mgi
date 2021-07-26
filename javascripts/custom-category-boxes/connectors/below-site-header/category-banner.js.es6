@@ -59,7 +59,7 @@ export default {
 
         } else {
 
-          let anuncio = document.getElementsByClassName("anuncio");
+          // let anuncio = document.getElementsByClassName("anuncio");
           // bienvenido 
           console.log(splitURL[1].includes('preview_theme_id'))
           if(splitURL[1] === '' || splitURL[1].includes('preview_theme_id')){
@@ -70,7 +70,7 @@ export default {
             color = "FFC1B3";
 
             html.classList.add("category-page-custom-banner");
-            anuncio.classList.remove("d-none");
+            // anuncio.classList.remove("d-none");
 
             component.setProperties({
               show_banner,

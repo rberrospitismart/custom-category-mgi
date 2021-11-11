@@ -3,16 +3,18 @@
     <div class="card shadow">
       <div class="row g-0">
         <div class="col-3 col-md-4">
-          {{#if (not c.isMuted) }}
+          {{#unless c.isMuted}}
             {{#if c.uploaded_logo.url}}
               {{cdn-img src=c.uploaded_logo.url
                   class="logo"
                   width=c.uploaded_logo.width
                   height=c.uploaded_logo.height}}
+            {{else}}
+              <span>No image</span>
             {{/if}}
           {{else}}
             <span>No image</span>
-          {{/if}}
+          {{/unless}}
         </div>
         <div class="col-9 col-md-8">
           <div class="card-body">

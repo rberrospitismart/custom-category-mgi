@@ -30,7 +30,12 @@
   // Card
   .card {
     border: none !important;
-    border-radius: 10px !important;
+    border-radius: 10px !important;    
+
+    .no-image{
+      width: 148px;
+      height: 132px;
+    }
   }
 
   a {

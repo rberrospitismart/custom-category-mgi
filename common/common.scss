@@ -308,7 +308,6 @@
         &.main-link{
           .link-top-line{
             display: flex;
-            gap: 10px;
             .topic-statuses{
               height: 20px;
               .topic-status{
@@ -328,6 +327,9 @@
               &:hover{
                 text-decoration: underline;
               }
+            }
+            .title{
+              align-self: flex-end;
             }
           }
           .link-bottom-line{

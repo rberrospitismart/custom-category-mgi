@@ -148,7 +148,7 @@
 }
 
 
-/* Navigation Bar */
+/* Category BreadCrumb */
 .category-breadcrumb {
   width: 100%;
   display: flex;
@@ -168,6 +168,18 @@
           font-weight: 600;
         }
       }
+    }
+  }
+}
+
+/* Category BreadCrumb */
+#navigation-bar{
+  gap: 32px;
+  li{
+    margin: 0;
+    a{
+      padding-left: 0;
+      padding-right: 0;
     }
   }
 }

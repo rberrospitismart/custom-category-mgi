@@ -307,6 +307,8 @@
         padding-bottom: 16px;
         &.main-link{
           .link-top-line{
+            display: flex;
+            align-items: baseline;
             .topic-statuses{
               height: 20px;
               .topic-status{

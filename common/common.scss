@@ -302,12 +302,14 @@
   tbody{
     tr{
       height: 49px;
-      &:first-of-type{
-        padding-top: 16px;
-      }
       td{
         padding-top: 16px;
         padding-bottom: 16px;
+      }
+      &:first-of-type{
+        td{
+          padding-top: 32px;
+        }
       }
     }
   }

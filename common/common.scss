@@ -1,6 +1,6 @@
 @for $i from 1 through 1440 {
   .container-#{$i}{
-    max-width: $i;
+    max-width: #{$i}px;
   }
 }
 

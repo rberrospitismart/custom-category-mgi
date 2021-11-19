@@ -383,6 +383,14 @@
             color: #333333;
           }
         }
+        &.activity{
+          a{
+            font-weight: 400;
+            font-size: 14px;
+            color: #333333;
+            text-decoration: none;
+          }
+        }
       }
       &:first-of-type{
         td{

@@ -139,7 +139,6 @@
     }
 
     .container-hola{
-      display: flex;
       align-items: center;
       justify-content: flex-end;
       text-align: right;
@@ -148,7 +147,7 @@
         font-weight: 300;
         letter-spacing: -10px;
         color: #FFFFFF;
-        line-height: 1;
+        line-height: 0.8;
         margin: 0;
       }
     }

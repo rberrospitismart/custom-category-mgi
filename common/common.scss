@@ -65,6 +65,9 @@
         &-body{
           max-width: 460px;
           width: 100%;
+          .card-body{
+            width: 100%;
+          }
         }
       }
     }

@@ -1,0 +1,27 @@
+{{#conditional-loading-spinner condition=loading}}
+  {{#if topics}}
+    {{topic-list
+      showPosters=showPosters
+      hideMobileAvatar=hideMobileAvatar
+      hideCategory=hideCategory
+      topics=topics
+      expandExcerpts=expandExcerpts
+      bulkSelectEnabled=bulkSelectEnabled
+      bulkSelectAction=bulkSelectAction
+      canBulkSelect=canBulkSelect
+      selected=selected
+      tagsForUser=tagsForUser
+      onScroll=onScroll
+      scrollOnLoad=scrollOnLoad
+      toggleBulkSelect=toggleBulkSelect
+      updateAutoAddTopicsToBulkSelect=updateAutoAddTopicsToBulkSelect
+    }}
+    <span>Hola</span>
+  {{else}}
+    {{#unless loadingMore}}
+      <div class="alert alert-info">
+        {{i18n "choose_topic.none_found"}}
+      </div>
+    {{/unless}}
+  {{/if}}
+{{/conditional-loading-spinner}}

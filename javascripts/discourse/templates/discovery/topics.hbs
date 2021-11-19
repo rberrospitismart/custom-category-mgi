@@ -16,6 +16,57 @@ model=model showResetNew=showResetNew showDismissRead=showDismissRead resetNew=(
     discoveryList=true}}
 {{/if}}
 
+{{#discovery-topics-list
+  model=model
+  refresh=(action "refresh")
+  incomingCount=topicTrackingState.incomingCount
+  autoAddTopicsToBulkSelect=autoAddTopicsToBulkSelect
+  bulkSelectEnabled=bulkSelectEnabled
+  addTopicsToBulkSelect=(action "addTopicsToBulkSelect")
+  as |discoveryTopicList|}}
+  {{#if top}}
+    <div class="top-lists">
+      {{period-chooser period=period action=(action "changePeriod") fullDay=false}}
+    </div>
+  {{else}}
+    {{#if topicTrackingState.hasIncoming}}
+      <div class="show-more {{if hasTopics "has-topics"}}">
+        <a tabindex="0" href {{action "showInserted"}} class="alert alert-info clickable">
+          {{count-i18n key="topic_count_" suffix=topicTrackingState.filter count=topicTrackingState.incomingCount}}
+        </a>
+      </div>
+    {{/if}}
+  {{/if}}
+  {{plugin-outlet name="before-topic-list" args=(hash category=category)}}
+
+  {{#if hasTopics}}
+    {{topic-list
+      highlightLastVisited=true
+      top=top
+      showTopicPostBadges=showTopicPostBadges
+      showPosters=true
+      canBulkSelect=canBulkSelect
+      changeSort=(route-action "changeSort")
+      toggleBulkSelect=(action "toggleBulkSelect")
+      updateAutoAddTopicsToBulkSelect=(action "updateAutoAddTopicsToBulkSelect")
+      hideCategory=model.hideCategory
+      order=order
+      ascending=ascending
+      bulkSelectEnabled=bulkSelectEnabled
+      bulkSelectAction=(action "refresh")
+      selected=selected
+      expandGloballyPinned=expandGloballyPinned
+      expandAllPinned=expandAllPinned
+      category=category
+      topics=model.topics
+      discoveryList=true
+      scrollOnLoad=true
+      onScroll=discoveryTopicList.saveScrollPosition}}
+  {{/if}}
+
+  {{plugin-outlet name="after-topic-list" args=(hash category=category)}}
+{{/discovery-topics-list}}
+
 <footer class="topic-list-bottom">
   {{conditional-loading-spinner condition=model.loadingMore}}
   {{#if allLoaded}}

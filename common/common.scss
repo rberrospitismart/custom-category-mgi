@@ -56,9 +56,9 @@
       .container-column{
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
         &-image{
+          justify-content: center;
           max-width: 148px;
           width: 100%;
         }

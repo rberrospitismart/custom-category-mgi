@@ -161,7 +161,8 @@
       padding: 16px 24px;      
       .select-kit-header-wrapper{
         gap: 11px;
-        .select-kit-selected-name{          
+        .select-kit-selected-name{
+          padding: 0;
           text-transform: capitalize;
           font-size: 14px;
           font-weight: 600;

@@ -134,9 +134,10 @@
   }
     
   .hola {
-      font-size: 180px;
       display: flex;
       align-items: center;
+      justify-content: flex-end;
+      font-size: 300px;
       text-align: right;
       letter-spacing: -10px;
       color: #FFFFFF;

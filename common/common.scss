@@ -175,6 +175,9 @@
 /* Category BreadCrumb */
 #navigation-bar{
   gap: 32px;
+  &::before{
+    content: none;
+  }
   li{
     margin: 0;
     a{

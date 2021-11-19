@@ -137,16 +137,17 @@
       align-items: center;
       gap: 100px;
     }
-  }
     
-  .hola {
-      display: flex;
-      align-items: center;
-      justify-content: flex-end;
-      font-size: 300px;
-      text-align: right;
-      letter-spacing: -10px;
-      color: #FFFFFF;
+    .hola {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        font-size: 300px;
+        font-weight: 300;
+        text-align: right;
+        letter-spacing: -10px;
+        color: #FFFFFF;
+    }
   }
 
   h1 .title {

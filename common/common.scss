@@ -279,20 +279,23 @@
     padding-left: 10px;
   }
   thead{
-    th{
-      background-color: white;
-      color: black;
-      font-size: 16px;
-      font-weight: 500;
-      &:first-of-type {
-        border-bottom-left-radius: 10px;
-        border-top-left-radius: 10px;
-        padding-left: 16px;
-      }
-      &:last-of-type {
-        border-bottom-right-radius: 10px;
-        border-top-right-radius: 10px;
-        padding-right: 16px;
+    tr{
+      height: 49px;
+      th{
+        background-color: white;
+        color: black;
+        font-size: 16px;
+        font-weight: 500;
+        &:first-of-type {
+          border-bottom-left-radius: 10px;
+          border-top-left-radius: 10px;
+          padding-left: 16px;
+        }
+        &:last-of-type {
+          border-bottom-right-radius: 10px;
+          border-top-right-radius: 10px;
+          padding-right: 16px;
+        }
       }
     }
   }

@@ -5,7 +5,7 @@
     }
 }
 
-@for $i from 1 through 100 {
+@for $i from 1 through 300 {
     $size: $i;
     .fs-#{$size}{
         font-size: #{$size}px;

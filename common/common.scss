@@ -66,6 +66,8 @@
           max-width: 460px;
           width: 100%;
           .card-body{
+            display: flex;
+            flex-direction: column;
             padding: 30px 40px 0px;
             width: 100%;
             gap: 15px;

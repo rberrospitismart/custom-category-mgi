@@ -140,8 +140,10 @@
 
     .container-hola{
       align-items: center;
-      justify-content: flex-end;
+      justify-content: flex-start;
       text-align: right;
+      vertical-align: middle;
+      height: 235px;
       .hola {
         font-size: 300px;
         font-weight: 300;

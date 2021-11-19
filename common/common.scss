@@ -366,6 +366,16 @@
             display: none !important;
           }
         }
+        &.posts-map{
+          .btn-link{
+            text-decoration: none;
+            .span{
+              font-weight: 400;
+              font-size: 14px;
+              color: #333333;
+            }
+          }
+        }
       }
       &:first-of-type{
         td{

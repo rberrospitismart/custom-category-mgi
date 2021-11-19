@@ -343,6 +343,10 @@
                   font-size: 14px;
                   font-weight: 500;
                   color: #4F4F4F;
+                  text-decoration: none;
+                  &:hover{
+                    text-decoration: underline;
+                  }
                 }
               }
             }

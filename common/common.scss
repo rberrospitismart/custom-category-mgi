@@ -1,3 +1,9 @@
+@for $i from 1 through 1440 {
+  .container-#{$width}{
+    max-width: $width;
+  }
+}
+
 @for $i from 1 through 9 {
     $weight: 100 * $i;
     .fw-#{$weight}{

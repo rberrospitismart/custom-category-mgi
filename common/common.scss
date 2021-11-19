@@ -231,3 +231,19 @@
     }
   }
 }
+
+@media(max-width: 1024px){
+  /* Custom Category Banner */
+  .banner {
+    .container {
+      .custom-row-banner{
+        gap: 10px;
+        .container-hola{
+          .hola {
+            font-size: 200px;
+          }
+        }
+      }
+    }
+  }
+}

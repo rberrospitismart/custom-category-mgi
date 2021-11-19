@@ -2,9 +2,6 @@
   <div class="alert alert-info">{{redirectedReason}}</div>
 {{/if}}
 
-{{topic-dismiss-buttons position="top" selectedTopics=selected
-model=model showResetNew=showResetNew showDismissRead=showDismissRead resetNew=(action "resetNew")}}
-
 {{#if model.sharedDrafts}}
   {{topic-list
     class="shared-drafts"

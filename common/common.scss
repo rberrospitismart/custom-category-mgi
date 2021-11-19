@@ -315,6 +315,13 @@
               padding: 0;
             }
           }
+          .link-bottom-line{
+            a{
+              .badge-category-bg{
+                border-radius: 20px;
+              }
+            }
+          }
         }
       }
       &:first-of-type{

@@ -180,9 +180,11 @@
   }
   li{
     margin: 0;
-    a{
+    a#nav-bar-item{
       padding-left: 0;
       padding-right: 0;
+      font-size: 16px;
+      font-weight: 400;
     }
   }
 }

@@ -312,6 +312,9 @@
           &:before{
             content: none;
           }
+          &:after{
+            content: none;
+          }
           .link-top-line{
             display: flex;
             .topic-statuses{

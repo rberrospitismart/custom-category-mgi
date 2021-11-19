@@ -185,8 +185,7 @@
       padding-right: 0;
       font-size: 16px;
       font-weight: 400;
-      color: black;
-      &.active{
+      &:not(.active){
         opacity: 0.5;
       }
     }

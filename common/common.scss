@@ -48,7 +48,26 @@
   // Card
   .card {
     border: none !important;
-    border-radius: 10px !important;    
+    border-radius: 10px !important;
+
+    .container.row{
+      display: flex;
+      flex-direction: row;
+      .container-column{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &-image{
+          max-width: 148px;
+          width: 100%;
+        }
+        &-body{
+          max-width: 460px;
+          width: 100%;
+        }
+      }
+    }
 
     .no-image{
       width: 148px;

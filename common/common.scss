@@ -274,6 +274,22 @@
   max-width: 1264px;
 }
 
+.topic-list{
+  .topic-list-data:first-of-type {
+    padding-left: 10px;
+  }
+  thead{
+    th{
+      background-color: white;
+    }
+    th:first-of-type {
+      border-bottom-left-radius: 10px;
+      border-top-left-radius: 10px;
+      padding-left: 16px;
+    }
+  }
+}
+
 @media(max-width: 1024px){
   /* Custom Category Banner */
   .banner {

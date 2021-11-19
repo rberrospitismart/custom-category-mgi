@@ -1,5 +1,15 @@
-.fw-600{
-  font-weight: 600;
+@for $i from 1 through 9 {
+    $weight: 100 * $i;
+    .fw-#{$weight}{
+        font-weight: $weight;
+    }
+}
+
+@for $i from 1 through 100 {
+    $size: $i;
+    .fs-#{$size}{
+        font-size: #{$size}px;
+    }
 }
 
 .custom-categories-wrapper {

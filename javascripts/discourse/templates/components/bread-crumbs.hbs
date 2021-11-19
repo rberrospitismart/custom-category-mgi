@@ -20,20 +20,24 @@
 
 {{#if showTagsSection}}
   {{#if additionalTags}}
-    {{tags-intersection-chooser
-      currentCategory=category
-      mainTag=tag.id
-      additionalTags=additionalTags
-      options=(hash
-        categoryId=category.id
-      )
-    }}
+    <li>
+      {{tags-intersection-chooser
+        currentCategory=category
+        mainTag=tag.id
+        additionalTags=additionalTags
+        options=(hash
+          categoryId=category.id
+        )
+      }}
+    </li>
   {{else}}
-    {{tag-drop
-      currentCategory=category
-      noSubcategories=noSubcategories
-      tagId=tag.id
-    }}
+    <li>
+      {{tag-drop
+        currentCategory=category
+        noSubcategories=noSubcategories
+        tagId=tag.id
+      }}
+    </li>
   {{/if}}
 {{/if}}
 

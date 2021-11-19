@@ -332,6 +332,10 @@
           }
           .link-bottom-line{
             a{
+              text-decoration: none;
+              &:hover{
+                text-decoration: underline;
+              }
               .badge-category-bg{
                 width: 12px;
                 height: 12px;
@@ -343,10 +347,6 @@
                   font-size: 14px;
                   font-weight: 500;
                   color: #4F4F4F;
-                  text-decoration: none;
-                  &:hover{
-                    text-decoration: underline;
-                  }
                 }
               }
             }

@@ -448,7 +448,7 @@
 }
 
 .tag-drop{
-  .discourse-tag .bullet{
+  .discourse-tag{
     &::before{
       content: none
     }

@@ -448,13 +448,20 @@
 }
 
 .tag-drop{
-  .discourse-tag{
-    text-decoration: none;
-    &:hover{
-      text-decoration: underline;
-    }
-    &::before{
-      content: none
+  .select-kit-collection{
+    li{
+      &.is-highlighted{
+        background: #E1D7F0;
+      }
+      .discourse-tag{
+        text-decoration: none;
+        &:hover{
+          text-decoration: underline;
+        }
+        &::before{
+          content: none
+        }
+      }
     }
   }
 }

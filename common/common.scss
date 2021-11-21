@@ -438,6 +438,7 @@
       font-size: 14px;
       height: 26px;
       display: flex;
+      flex-direction: row;
       align-items: center;
       &.is-highlighted{
         background: #0000001a;

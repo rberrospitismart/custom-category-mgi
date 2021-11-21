@@ -411,9 +411,8 @@
   position: absolute !important;
   .select-kit-filter.is-expanded {
     background-color: white;
-    border-bottom: 1px solid #dadada;
-    border-top: 0px;
-    margin-bottom: 10px;
+    border: none;
+    margin: 0;
     padding: 0px 8px 10px 8px;
     .filter-input{
       background: white;

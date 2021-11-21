@@ -437,6 +437,12 @@
     .select-kit-row{
       padding: 0px;
       font-size: 14px;
+      .badge-category{
+        .category-name{
+          font-weight: 400;
+          color: #000000;
+        }
+      }
     }
   }
 }

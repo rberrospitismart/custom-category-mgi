@@ -449,6 +449,10 @@
 
 .tag-drop{
   .discourse-tag{
+    text-decoration: none;
+    &:hover{
+      text-decoration: underline;
+    }
     &::before{
       content: none
     }

@@ -449,7 +449,9 @@
 
 .tag-drop{
   .select-kit-collection{
+    padding: 0;
     li{
+      padding: 0px 16px;
       &.is-highlighted{
         background: #E1D7F0;
       }

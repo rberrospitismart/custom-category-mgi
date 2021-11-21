@@ -447,6 +447,14 @@
   }
 }
 
+.tag-drop{
+  .discourse-tag .bullet{
+    &::before{
+      content: none
+    }
+  }
+}
+
 @media(max-width: 1024px){
   /* Custom Category Banner */
   .banner {

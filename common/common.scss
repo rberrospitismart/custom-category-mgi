@@ -432,11 +432,14 @@
     }
   }
   .select-kit-collection{
-    padding: 0px 16px;
+    padding: 0 !important;
     gap: 6px;
     .select-kit-row{
-      padding: 0px;
+      padding: 0px 16px !important;
       font-size: 14px;
+      &.is-highlighted{
+        background: #000000;
+      }
       .badge-category{
         .category-name{
           font-weight: 400;

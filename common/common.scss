@@ -342,6 +342,11 @@
           .timeline-date-wrapper{
             a{
               text-decoration: none;
+              span{
+                font-size: 16px;
+                font-weight: 500;
+                color: #4F4F4F;
+              }
             }
           }
           .timeline-scrollarea{

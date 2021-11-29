@@ -22,6 +22,19 @@
     {{topic-footer-mobile-dropdown topic=topic content=dropdownButtons}}
   {{/if}}
 
+  {{#each inlineActionables as |actionable|}}
+      {{d-button
+        id=(concat "topic-footer-button-" actionable.id)
+        class=(concat "btn-default topic-footer-button " actionable.classNames)
+        action=actionable.action
+        icon=actionable.icon
+        translatedLabel=actionable.label
+        translatedTitle=actionable.title
+        translatedAriaLabel=actionable.ariaLabel
+        disabled=actionable.disabled
+      }}
+  {{/each}}
+
   {{plugin-outlet name="topic-footer-main-buttons-before-create"
                   args=(hash topic=topic)
                   tagName=""

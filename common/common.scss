@@ -272,6 +272,18 @@
 
 #main-outlet{
   max-width: 1264px;
+  .topic-title{
+    .title-wrapper{
+      h1{
+        a{
+          text-decoration: none;
+          font-size: 32px;
+          font-weight: 600;
+          color: black;
+        }
+      }
+    }
+  }
 }
 
 .topic-list{

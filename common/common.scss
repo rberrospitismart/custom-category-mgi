@@ -303,6 +303,8 @@
               .topic-avatar{
                 width: 45px !important;
                 padding: 12px 0 0 0;
+                border-top: 0;
+                margin-top: 0;
               }
               .topic-body{
                 width: calc(690px + (11px * 2)) !important;

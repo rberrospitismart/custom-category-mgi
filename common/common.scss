@@ -294,6 +294,21 @@
       }
     }
   }
+  .posts{
+    .topic-area{
+      .post-stream{
+        .topic-post{
+          article{
+            .row{
+              .topic-avatar{
+                width: 45px !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 .topic-list{

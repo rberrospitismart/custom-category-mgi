@@ -398,12 +398,6 @@
       font-size: 16px;
       font-weight: 600;
     }
-    .share-and-invite{
-      background-color: #FFF0BC;
-      border-radius: 24px;
-      height: 46px;
-      width: 142px;
-    }
     .create{
       background-color: #D2EBEB;
       border-radius: 24px;
@@ -413,6 +407,18 @@
       .d-icon{
         color: black;
       }
+    }
+    .share-and-invite{
+      background-color: #FFF0BC;
+      border-radius: 24px;
+      height: 46px;
+      width: 142px;
+    }
+    .bookmark{
+      display: none;
+    }
+    .flag-topic{
+      display: none
     }
   }
 }

@@ -351,14 +351,26 @@
           }
           .timeline-scrollarea{
             border-color: #828282;
-          }
-          .timeline-handle{
-            background-color: black;
-            border-radius: 50%;
-            height: 12px;
-            width: 12px;
-            float: left;
-            margin-left: -3px;
+            .timeline-handle{
+              background-color: black;
+              border-radius: 50%;
+              height: 12px;
+              width: 12px;
+              float: left;
+              margin-left: -3px;
+            }
+            .timeline-scroller-content{
+              .timeline-replies{
+                font-size: 16px;
+                font-weight: 600;
+                color: black;
+              }
+              .timeline-ago{
+                font-size: 16px;
+                font-weight: 500;
+                color: #4F4F4F;
+              }
+            }
           }
         }
       }

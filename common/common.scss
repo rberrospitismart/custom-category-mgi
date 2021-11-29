@@ -336,6 +336,20 @@
         }
       }
     }
+    .topic-navigation{
+      .timeline-container{
+        .topic-timeline{
+          .timeline-handle{
+            background-color: var(--fg-high-contrast);
+            border-radius: 50%;
+            height: 12px;
+            width: 12px;
+            float: left;
+            margin-left: -3px;
+          }
+        }
+      }
+    }
   }
 }
 

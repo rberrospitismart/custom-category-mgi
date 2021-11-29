@@ -353,9 +353,9 @@
                     border: none;
                     border-radius: 15px;
                     ul{
-                      padding-left: 6px;
+                      padding: 10px 6px 10px 0px;
                       li{
-                        padding: 20px 10px;
+                        padding: 10px 10px;
                         a{
                           text-decoration: none;
                         }
@@ -368,6 +368,9 @@
                           color: black;
                           font-size: 16px;
                           font-weight: 600;
+                        }
+                        &.last-reply{
+                          border-right: 1px solid #828282;
                         }
                       }
                     }

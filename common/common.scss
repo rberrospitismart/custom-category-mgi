@@ -372,7 +372,7 @@
                         &.last-reply{
                           border-right: 1px solid #828282;
                         }
-                        &:not(.last-reply .created-at){
+                        &:not(.last-reply):not(.created-at){
                           display: flex;
                           flex-direction: column-reverse;
                           gap: 8px;

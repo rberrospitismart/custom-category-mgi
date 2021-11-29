@@ -1,0 +1,12 @@
+<div class="topic-list-item-footer-buttons">
+  {{#each inlineButtons as |button|}}
+    {{d-button
+      class=(concat "btn-default topic-list-item-footer-buttons " button.classNames)
+      action=button.action
+      icon=button.icon
+      translatedLabel=button.label
+      translatedTitle=button.title
+      translatedAriaLabel=button.ariaLabel
+      disabled=button.disabled}}
+  {{/each}}
+</div>

@@ -352,6 +352,9 @@
                   .map{
                     border: none;
                     border-radius: 15px;
+                    ul{
+                      padding-left: 6px;
+                    }
                   }
                 }
               }

@@ -302,9 +302,11 @@
             .row{
               .topic-avatar{
                 width: 45px !important;
+                padding: 12px 0 0 0;
               }
               .topic-body{
                 width: calc(690px + (11px * 2)) !important;
+                padding: 12px 0 0 0;
               }
             }
           }

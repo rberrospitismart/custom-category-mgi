@@ -339,6 +339,11 @@
     .topic-navigation{
       .timeline-container{
         .topic-timeline{
+          .timeline-date-wrapper{
+            a{
+              text-decoration: none;
+            }
+          }
           .timeline-scrollarea{
             border-color: #828282;
           }

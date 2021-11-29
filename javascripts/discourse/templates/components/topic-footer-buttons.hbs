@@ -22,17 +22,6 @@
     {{topic-footer-mobile-dropdown topic=topic content=dropdownButtons}}
   {{/if}}
 
-  {{#each inlineButtons as |button|}}
-    {{d-button
-      class=(concat "btn-default topic-list-item-footer-buttons " button.classNames)
-      action=button.action
-      icon=button.icon
-      translatedLabel=button.label
-      translatedTitle=button.title
-      translatedAriaLabel=button.ariaLabel
-      disabled=button.disabled}}
-  {{/each}}
-
   {{plugin-outlet name="topic-footer-main-buttons-before-create"
                   args=(hash topic=topic)
                   tagName=""
@@ -50,6 +39,17 @@
                   args=(hash topic=topic)
                   tagName=""
                   connectorTagName="span"}}
+
+  {{#each inlineButtons as |button|}}
+    {{d-button
+      class=(concat "btn-default topic-list-item-footer-buttons " button.classNames)
+      action=button.action
+      icon=button.icon
+      translatedLabel=button.label
+      translatedTitle=button.title
+      translatedAriaLabel=button.ariaLabel
+      disabled=button.disabled}}
+  {{/each}}
 </div>
 
 {{pinned-button pinned=topic.pinned topic=topic}}

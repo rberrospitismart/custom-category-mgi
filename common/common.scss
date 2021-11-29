@@ -372,6 +372,11 @@
                         &.last-reply{
                           border-right: 1px solid #828282;
                         }
+                        &.replies, &.views, &.users{
+                          display: flex;
+                          flex-direction: column-reverse;
+                          gap: 8px;
+                        }
                       }
                     }
                   }

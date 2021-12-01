@@ -513,6 +513,13 @@
           .d-editor-textarea-wrapper{
             border: 1px solid black;
             background: white;
+            .d-editor-button-bar{
+              border: none;
+              padding: 14.5px 0px;
+              button{
+                border: none;
+              }
+            }
           }
         }
       }

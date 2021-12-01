@@ -475,6 +475,12 @@
   .grippie{
     background: black;
   }
+  .composer-popup-container{
+    .composer-popup{
+      background-color: transparent;
+      top: 0px;
+    }
+  }
   .reply-area{
     background-color: #FAF5F2;
     .composer-fields{

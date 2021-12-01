@@ -796,8 +796,12 @@ header.d-header{
     }
   }
 }
-body.category{  
-  th{
-    background-color: inherit;
+body.category{
+  .topic-list-header{
+    tr{
+      th{
+        background-color: inherit;
+      }
+    }
   }
 }

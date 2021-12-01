@@ -507,6 +507,16 @@
         }
       }
     }
+    .toolbar-visible{
+      .d-editor{
+        .d-editor-container{
+          .d-editor-textarea-wrapper{
+            border: 1px solid black;
+            background: white;
+          }
+        }
+      }
+    }
   }
 }
 

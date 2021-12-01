@@ -208,6 +208,15 @@
   }
 }
 
+header.d-header{
+  .extra-info-wrapper{
+    padding: 0.5em 0;
+    a{
+      text-decoration: none;
+    }
+  }
+}
+
 #navigation-bar {
   #nav-bar-item.active {
     background: #FAF5F2 !important;

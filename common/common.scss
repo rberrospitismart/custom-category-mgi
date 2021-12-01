@@ -514,10 +514,13 @@
             border: 1px solid black;
             background: white;
             .d-editor-button-bar{
-              border: none;
+              border-color: #FAF5F2;
               padding: 14.5px 0px;
               button{
                 border: none;
+              }
+              .d-editor-spacer{
+                border-color: #FAF5F2;
               }
             }
           }

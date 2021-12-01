@@ -515,7 +515,7 @@
             background: white;
             padding: 14.5px 11.8px;
             &.in-focus{
-              outline: none;
+              outline: 1px solid black;
             }
             .d-editor-button-bar{
               border-color: #FAF5F2;

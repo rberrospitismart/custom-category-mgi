@@ -6,6 +6,9 @@ export default {
 
       api.onPageChange((url, title) => {
         console.log("this.site.categories",this.site.categories);
+        component.setProperties({
+          backgroundColor: `#FFC1B3`
+        })
       })
 
     })

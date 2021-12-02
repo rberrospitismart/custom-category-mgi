@@ -52,6 +52,8 @@ export default {
           html.classList.add("category-page-custom-banner")
           thead.style.backgroundColor = c.color
 
+          console.log("thead",thead)
+
           component.setProperties({
             show_banner,
             title: c.name.replace(/^\w/, c => c.toUpperCase()),

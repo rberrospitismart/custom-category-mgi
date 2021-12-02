@@ -10,7 +10,6 @@ export default {
         let html = document.getElementsByTagName("html")[0];
 
         let thead = document.getElementsByClassName("topic-list-header")
-        console.log("thead",thead)
 
         console.log(url);
         console.log(splitURL);
@@ -51,6 +50,7 @@ export default {
           }
           
           html.classList.add("category-page-custom-banner")
+          thead.style.backgroundColor = c.color
 
           component.setProperties({
             show_banner,
@@ -73,6 +73,7 @@ export default {
             color = "FFC1B3";
 
             html.classList.add("category-page-custom-banner");
+            thead.style.backgroundColor = ""
             // anuncio.classList.remove("d-none");
 
             component.setProperties({

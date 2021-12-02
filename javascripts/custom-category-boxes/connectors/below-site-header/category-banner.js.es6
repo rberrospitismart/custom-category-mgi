@@ -50,7 +50,7 @@ export default {
           }
           
           html.classList.add("category-page-custom-banner")
-          thead.style.backgroundColor = c.color
+          thead.style.backgroundColor = `#${ c.color }`
 
           console.log("thead",thead)
 

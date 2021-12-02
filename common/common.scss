@@ -805,9 +805,11 @@ body.category{
         }
       }
     }
-    .container{
-      .top-lists{
-        display: none;
+    .list-container{
+      .row.hola{
+        .top-lists{
+          display: none;
+        }
       }
     }
   }

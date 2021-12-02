@@ -805,13 +805,6 @@ body.category{
         }
       }
     }
-    .list-container{
-      .hola{
-        #list-area{
-          display: none;
-        }
-      }
-    }
   }
   .topic-list-header{
     tr{
@@ -820,4 +813,7 @@ body.category{
       }
     }
   }
+}
+.top-lists{
+  display: none;
 }

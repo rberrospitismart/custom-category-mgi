@@ -797,6 +797,15 @@ header.d-header{
   }
 }
 body.category{
+  #main-outlet{
+    .list-controls{
+      .container{
+        .category-haeding{
+          display: none;
+        }
+      }
+    }
+  }
   .topic-list-header{
     tr{
       th{

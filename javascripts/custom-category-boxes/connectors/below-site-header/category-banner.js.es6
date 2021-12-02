@@ -9,6 +9,9 @@ export default {
         let splitURL = url.split("/")
         let html = document.getElementsByTagName("html")[0];
 
+        let thead = document.getElementsByClassName("topic-list-header")
+        console.log("thead",thead)
+
         console.log(url);
         console.log(splitURL);
         console.log(settings);

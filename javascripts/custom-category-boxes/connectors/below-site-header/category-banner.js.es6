@@ -50,7 +50,7 @@ export default {
           }
           
           html.classList.add("category-page-custom-banner")
-          thead.style.backgroundColor = `#${ c.color }`
+          if(thead.length != 0 ) thead.style.backgroundColor = `#${ c.color }`
 
           component.setProperties({
             show_banner,
@@ -73,7 +73,8 @@ export default {
             color = "FFC1B3";
 
             html.classList.add("category-page-custom-banner");
-            thead.style.backgroundColor = ""
+            if(thead.length != 0 ) thead.style.backgroundColor = ""
+            
             // anuncio.classList.remove("d-none");
 
             component.setProperties({

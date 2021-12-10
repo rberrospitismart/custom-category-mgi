@@ -381,7 +381,7 @@ header.d-header{
                         &.last-reply{
                           border-right: 1px solid #828282;
                         }
-                        &:not(.last-reply):not(.created-at){
+                        &:not(.last-reply):not(.created-at):not(.avatars){
                           display: flex;
                           flex-direction: column-reverse;
                           gap: 8px;

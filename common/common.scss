@@ -174,6 +174,10 @@
       flex-direction: row;
       align-items: center;
       gap: 100px;
+      h1{
+        font-weight: 600;
+        font-size: 45px;
+      }
       p {
         font-size: 18px;
         color: #000000;
@@ -191,6 +195,21 @@
           color: #FFFFFF;
           line-height: 1;
           margin: 0;
+        }
+      }
+    }
+  }
+}
+
+.category-page-custom-banner{
+  .banner{
+    .container{
+      .custom-row-banner{
+        h1{
+          font-size: 80px;
+        }
+        p {
+          font-size: 24px;
         }
       }
     }

@@ -205,6 +205,10 @@
   .banner{
     .container{
       .custom-row-banner{
+        &:first-child{
+          max-width: 391px;
+          width: 100%;
+        }
         h1{
           font-size: 80px;
         }

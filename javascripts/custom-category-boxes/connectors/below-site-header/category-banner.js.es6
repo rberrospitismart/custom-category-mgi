@@ -61,6 +61,8 @@ export default {
           })
 
         } else {
+        
+          html.classList.remove("category-page-custom-banner");
 
           // let anuncio = document.getElementsByClassName("anuncio");
           // bienvenido 
@@ -71,8 +73,7 @@ export default {
             description = "¡Haz preguntas, resuelve tus dudas, comparte comentarios y conéctate con la comunidad de Magi!", 
             abreviation = "Hola!", 
             color = "FFC1B3";
-
-            html.classList.add("category-page-custom-banner");
+            
             if(thead ) thead.style.backgroundColor = ""
             
             // anuncio.classList.remove("d-none");
@@ -86,8 +87,6 @@ export default {
             })
             return;
           } 
-        
-          html.classList.remove("category-page-custom-banner");
           // anuncio.classList.add("d-none");
           component.setProperties({
             show_banner: false

@@ -272,6 +272,12 @@ header.d-header{
   }
 }
 
+.navigation-controls{
+  #create-topic{
+    display: none;
+  }
+}
+
 .list-controls{
   margin-bottom: 28px;
   .navigation-container{

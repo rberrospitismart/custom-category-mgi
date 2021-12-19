@@ -41,7 +41,7 @@ export default {
           } else if(name == 'Articulos y Noticias'){
             description = "Publicaciones de interés para ti.";
             abreviation = "Noticias";
-          } else if(name == 'Preguntas & respuestas'){
+          } else if(name == 'Preguntas y respuestas'){
             description = "Resuelve tus dudas y obtén ayuda de otros usuarios de la comunidad.";
             abreviation = "P&R";
           } else if(name == 'Glosario de términos'){

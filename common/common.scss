@@ -533,6 +533,15 @@ header.d-header{
   }
   .list-controls{
     margin-top: 54px;
+    .select-kit{
+      .select-kit-body{
+        .select-kit-collection{
+          .select-kit-row{
+            height: auto;
+          }
+        }
+      }
+    }
   }
 }
 

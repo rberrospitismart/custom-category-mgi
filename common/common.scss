@@ -488,6 +488,11 @@ header.d-header{
               }
             }
           }
+          .timeline-footer-controls{
+            .widget-component-connector{
+              display: none;
+            }
+          }
         }
       }
     }

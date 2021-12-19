@@ -830,6 +830,11 @@ header.d-header{
       .category-desc{
         display: none;
       }
+      .category-status{
+        .topic-count{
+          display: none;
+        }
+      }
     }
   }
 }
